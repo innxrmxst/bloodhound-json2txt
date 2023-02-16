@@ -13,7 +13,6 @@ with open(bhuserfile) as data_file:
     data = json.load(data_file)
 
 print(data['data'][0]['Properties'])
-#print("name,enabled,displayname,email,title,description")
 for i in data['data']:
     oname = i['Properties']['name'] 
     print("{}".format(oname))
